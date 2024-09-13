@@ -1,1 +1,1 @@
-# new-repo-template
+# trident-2406
