@@ -128,6 +128,9 @@ add-on.json
    "cloudProvider": "AWS"}"
 }
 ----
++
+NOTE: When you configure the optional parameter `cloudIdentity`, ensure that you specify `AWS` as the `cloudProvider` while installing Trident using the EKS add-on.
++
 . Install the Astra Trident EKS add-on"
 
 +
