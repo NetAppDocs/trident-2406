@@ -15,3 +15,6 @@ entries:
        url: /trident-reco/security-reco.html
      - title: Linux Unified Key Setup (LUKS)
        url: /trident-reco/security-luks.html
+     - title: Configure in-flight Kerberos encryption
+       url: /trident-reco/configure-inflight-kerberos-encryption.html
+
