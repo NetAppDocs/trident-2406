@@ -21,5 +21,3 @@ If you aren't running Astra Trident 24.06, the documentation for previous releas
 * https://docs.netapp.com/us-en/trident-2210/index.html[Astra Trident 22.10^]
 * https://docs.netapp.com/us-en/trident-2207/index.html[Astra Trident 22.07^]
 * https://docs.netapp.com/us-en/trident-2204/index.html[Astra Trident 22.04^]
-* https://docs.netapp.com/us-en/trident-2201/index.html[Astra Trident 22.01^]
-
