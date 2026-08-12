@@ -80,7 +80,7 @@ Consider the following points:
 * A PVC and its clone should be in the same Kubernetes namespace and have the same storage class.
 * With the `ontap-nas` and `ontap-san` drivers, it might be desirable to set the PVC annotation `trident.netapp.io/splitOnClone` in conjunction with `trident.netapp.io/cloneFromPVC`. With `trident.netapp.io/splitOnClone` set to `true`, Trident splits the cloned volume from the parent volume and thus, completely decoupling the life cycle of the cloned volume from its parent at the expense of losing some storage efficiency. Not setting `trident.netapp.io/splitOnClone` or setting it to `false` results in reduced space consumption on the backend at the expense of creating dependencies between the parent and clone volumes such that the parent volume cannot be deleted unless the clone is deleted first. A scenario where splitting the clone makes sense is cloning an empty database volume where it's expected for the volume and its clone to greatly diverge and not benefit from storage efficiencies offered by ONTAP.
 
-The `sample-input` directory contains examples of PVC definitions for use with Trident. Refer to <<Trident `Volume` objects>> for a full description of the parameters and settings associated with Trident volumes.
+The `sample-input` directory contains examples of PVC definitions for use with Trident. Refer to <<Astra Trident `Volume` objects>> for a full description of the parameters and settings associated with Trident volumes.
 
 == Kubernetes `PersistentVolume` objects
 

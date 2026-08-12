@@ -20,7 +20,7 @@ In coming Astra Control updates, Astra Control Provisioner will replace Astra Tr
 
 .How do I know if I need to enable Astra Control Provisioner?
 
-If you add a cluster to Astra Control Service that does not have Astra Trident previously installed, the cluster will be marked as `Eligible`. After you link:../get-started/add-first-cluster.html[add the cluster to Astra Control], Astra Control Provisioner will be automatically enabled. 
+If you add a cluster to Astra Control Service that does not have Astra Trident previously installed, the cluster will be marked as `Eligible`. After you link:../trident-get-started/add-first-cluster.html[add the cluster to Astra Control], Astra Control Provisioner will be automatically enabled. 
 
 If your cluster is not marked `Eligible`, it will be marked `Partially eligible` because of one of the following:
 
@@ -64,7 +64,7 @@ docker login cr.astra.netapp.io -u <account-id> -p <api-token>
 crane auth login cr.astra.netapp.io -u <account-id> -p <api-token>
 ----
 
-. (Custom registries only) Follow these steps to move the image to your custom registry. If you aren't using a registry, follow the Trident operator steps in the <<no-registry,next section>>.
+. (Custom registries only) Follow these steps to move the image to your custom registry. If you aren't using a registry, follow the Trident operator steps in the <<first-step,next section>>.
 +
 NOTE: You can use Podman instead of Docker for the following commands. If you are using a Windows environment, PowerShell is recommended.
 +
@@ -120,7 +120,7 @@ crane copy cr.astra.netapp.io/astra/trident-acp:24.02.0 <my_custom_registry>/tri
 
 . Determine if the original Astra Trident installation method used an https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#determine-the-original-installation-method[operator (either manually or with Helm) or `tridentctl`^].
 
-. Enable Astra Control Provisioner in Astra Trident using the installation method you used originally:
+. [[first-step]]Enable Astra Control Provisioner in Astra Trident using the installation method you used originally:
 +
 [role="tabbed-block"]
 ====
@@ -128,7 +128,7 @@ crane copy cr.astra.netapp.io/astra/trident-acp:24.02.0 <my_custom_registry>/tri
 .Astra Trident operator
 --
 
-. https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html#step-1-download-the-trident-installer-package[Download the Astra Trident installer and extract it^].
+. https://docs.netapp.com/us-en/trident/trident-install/kubernetes-deploy-operator.html#step-1-download-the-trident-installer-package[Download the Astra Trident installer and extract it^].
 
 . Complete these steps if you have not yet installed Astra Trident or if you removed the operator from your original Astra Trident deployment:
 
@@ -236,7 +236,7 @@ status:
 .tridentctl
 --
 
-. https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-tridentctl.html#step-1-download-the-trident-installer-package[Download the Astra Trident installer and extract it^].
+. https://docs.netapp.com/us-en/trident/trident-install/kubernetes-deploy-tridentctl.html#step-1-download-the-trident-installer-package[Download the Astra Trident installer and extract it^].
 . https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-tridentctl.html[If you have an existing Astra Trident, uninstall it from the cluster that hosts it^].
 . Install Astra Trident with Astra Control Provisioner enabled (`--enable-acp=true`):
 +
