@@ -20,7 +20,7 @@ In coming Astra Control updates, Astra Control Provisioner will replace Astra Tr
 
 .How do I know if I need to enable Astra Control Provisioner?
 
-If you add a cluster to Astra Control Service that does not have Astra Trident previously installed, the cluster will be marked as `Eligible`. After you link:../trident-get-started/add-first-cluster.html[add the cluster to Astra Control], Astra Control Provisioner will be automatically enabled. 
+If you add a cluster to Astra Control Service that does not have Astra Trident previously installed, the cluster will be marked as `Eligible`. After you add the cluster to Astra Control, Astra Control Provisioner will be automatically enabled. 
 
 If your cluster is not marked `Eligible`, it will be marked `Partially eligible` because of one of the following:
 
